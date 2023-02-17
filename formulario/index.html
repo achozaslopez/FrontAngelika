@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Las pseudoclases en accion</h1>
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <ul class="nav navbar-nav">
+                    <li><a href="#">menu 1</a></li>
+                    <li><a href="#">menu 2</a></li>
+                    <li id="sinbarra"><a href="#">...</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <form id="formulario" action="#">
+
+            <fieldset>
+                <legend>Direccion</legend>
+                <div class="direccion" id="apartado">
+                    <div class="item">
+                        <label for="nombre_cliente">Nombre Cliente</label>
+                        <input type="text" name="nombre_cliente" id="nombre_cliente" placeholder="Indique el nombre y apellido" required>
+                    </div>
+                    <div class="item"><label for="calle">Calle</label>
+                        <input type="text" name="calle" id="calle" placeholder="Indique el nombre de la calle, numero y piso" required>
+                    </div>
+                    <div class="item"><label for="Ciudad">Ciudad</label>
+                        <input type="text" name="Ciudad" id="Ciudad" value="Barcelona">
+                    </div>
+                </div>
+            </fieldset>
+
+
+            <fieldset>
+                <legend>Sexo</legend>
+                <div class="sexo" id="apartado">
+                    <label id="sexo" for="masculino">Masculino<input id="sexo" type="radio" name="sexo" id="masculino" required></label>
+                    
+                    <label id="sexo" for="femenino">Femenino<input id="sexo" type="radio" name="sexo" id="femenino" required></label>
+                    
+                </div>
+            </fieldset>
+
+
+            <fieldset>
+                <legend>Aficiones</legend>
+                <div class="aficiones">
+                    <input class="aficiones-input" type="checkbox" name="aficiones" id="futbol">
+                    <label class="aficiones-label" for="futbol">Futbol</label>
+                    <input class="aficiones-input" type="checkbox" name="aficiones" id="toros" checked>
+                    <label class="aficiones-label" for="toros">Toros</label>   
+                    <input class="aficiones-input" type="checkbox" name="aficiones" id="ciclismo">
+                    <label class="aficiones-label" for="ciclismo">Ciclismo</label>   
+                     
+                </div>
+            </fieldset>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </main>
+
+</body>
+
+</html>
