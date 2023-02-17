@@ -1,0 +1,36 @@
+primary{
+    color: #3C6255;
+    color: #61876E;
+    color:#A6BB8D;
+    color: #EAE7B1;
+}
+
+
+.bg-body-tertiary{
+    background-color: #3C6255 !important;
+}
+
+.navbar-brand{
+    color: #EAE7B1 ;
+   margin: 0 1.2em 0 1.5em;
+}
+
+.nav-link active{
+    color: #61876E !important;
+    font-weight: bold;
+}
+
+.nav-link{
+    color:#A6BB8D;
+}
+
+.btn-outline-success{
+    color: #EAE7B1;
+    border: 0.1em solid #EAE7B1;
+    margin-right: 1.5em;
+}
+
+.btn-outline-success:hover{
+    background-color: #EAE7B1;
+    color: #3C6255;
+}
